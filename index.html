@@ -9,19 +9,27 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <form action="">
-    <input type="text" name="input1" id="input1" value="">
-    <input type="submit" id="button" value="inserir">
-    </form>
+    
+    <input type="text" name="input1" id="input1">
+    <input type="submit" id="button" value="inserir" onclick="getValue()">
+    
 
     <canvas width="600" height="600" id="canvas"></canvas>
     <script>
+        
+        /**/
+        var val;
+        function getValue(){
+            val = document.getElementById('input1').value;
+            console.log(val);
+        }
+
         /*Criação do canvas para gerar o desenho*/
         let canvas = document.querySelector('canvas');
         let context = canvas.getContext('2d');
         
-        /*Tentativa de pegar o valor do input pelo ID*/
-        const input = document.getElementById('input1').value;
+        
+        
     </script>
 </body>
 </html>
