@@ -6,30 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
     <script src="script.js"></script>
+    
 </head>
 <body>
     
-    <input type="text" name="input1" id="input1">
-    <input type="submit" id="button" value="inserir" onclick="getValue()">
+    <!-- <input type="text" name="input1" id="input1"> -->
+    <input type="submit" id="input1" value="inserir" onclick="getValue()">
+    <input type="submit" id="input2" value="inserir" onclick="getValue2()">
+    <input type="submit" id="input3" value="inserir" onclick="getValue3()">
     
-
-    <canvas width="600" height="600" id="canvas"></canvas>
-    <script>
-        
-        /**/
-        var val;
-        function getValue(){
-            val = document.getElementById('input1').value;
-            console.log(val);
-        }
-
-        /*Criação do canvas para gerar o desenho*/
-        let canvas = document.querySelector('canvas');
-        let context = canvas.getContext('2d');
-        
-        
-        
-    </script>
+    
 </body>
 </html>
